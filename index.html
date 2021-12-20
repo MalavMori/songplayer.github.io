@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style9.css">
+    <link rel="stylesheet" href="css/player.css">
+    <link rel="stylesheet" href="css/side_player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0-10/css/all.css" integrity="sha512-Dj9pt3sZROOuTTs9S89ykGZeu1XQgWKg3DVpu5tZALApsrWdd3tnVjTclUuVONaHM4O8GgCnjSbHlTKXrd2OWg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music</title>
+</head>
+<body id="body" onload="fun()">
+    <div class="loding" id="loding">
+        <div class="cantener">
+                <i class="fas fa-music" id="header_logo_l"></i>
+                <h1 id="header_text_l">Music</h1>
+        </div>
+    </div>
+    <header>
+        <i class="fas fa-music" id="header_logo"></i>
+        <span id="header_text">Music to make your day</span>
+    </header>
+    <div class="search" id="search">
+        <i class="fas fa-search" id="search_icon" title="search"></i>
+        <input type="text" name="" id="myinput" onkeyup="myfun()" placeholder="Search">
+    </div>
+    
+     <div class="song_list" id="song_list">
+     </div>
+
+    <div class="player" id="player">
+        <div class="titlep" id="titlep">
+            <h1 id="song_name">Gal karke</h1>
+            <h4 id="singer_name">Assuss kour</h4>
+        </div>
+        <div class="song_logop">
+            <img src="music_img/song.jpg" id="song_img" alt="">
+        </div>
+        <div class="progres_div" id="progres_div">
+            <div class="progres" id="progres"></div>
+            <input type="range" min="0" max="400" class="range" id="range_mi">
+        </div>
+        <div class="time">
+            <h4 id="current_time">0:00</h4>
+            <h4 id="duration_time">0:00</h4>
+        </div>
+        <div class="cantrol">
+            <i class="fas fa-list" id="list_btn" title="list"></i>
+            <i class="fas fa-backward" id="prev" title="prev"></i>
+            <i class="fas fa-play" id="play" title="play"></i>
+            <i class="fas fa-forward" id="next" title="next"></i>
+            <i class="fas fa-retweet" id="retweet"></i>
+        </div>
+    </div> 
+    <div class="side_player" id="side_player">
+        <div class="song_logo_s">
+            <img src="music_img/song.jpg" id="song_img_s" alt="" >
+        </div>
+        <div class="title_s" id="title_s">
+            <h2 id="song_name_s">Gal karake</h2>
+            <h4 id="singer_name_s">Asees Kaur</h4>
+        </div>
+        <div class="progres_div_s" id="progres_div_s">
+            <div class="progres_s" id="progres_s"></div>
+            <input type="range" class="side_range" id="side_range" min="0" max="250">
+        </div>
+        <div class="cantrol_s">
+            <i class="fas fa-backward" id="prev_s" title="prev"></i>
+            <i class="fas fa-play" id="play_s" title="play"></i>
+            <i class="fas fa-forward" id="next_s" title="next"></i>
+        </div>
+    </div>
+    <div class="hover_box" id="hover_box">
+    <div class="volum_box" id="volum_box">
+        <i class="fas fa-volume-up" id="volume_up"></i>
+    <div class="volum_main" id="volum_main">
+        <input type="range" class="volum_range" id="volum_range" min="0" max="150" value="150">
+        <div class="volum" id="volum"></div>
+    </div>
+    <div class="full" id="full"></div>
+</div>
+</div>
+<div class="hover_box_1" id="hover_box_1">
+    <div class="volum_box" id="volum_box_1">
+        <i class="fas fa-volume-up" id="volume_up_1"></i>
+    <div class="volum_main" id="volum_main_1">
+        <div class="volum" id="volum_1"></div>
+        <input type="range" class="volum_range" id="volum_range_1" value="150" min="0" max="150">
+    </div>
+    <div class="full" id="full_1"></div>
+</div>
+</div>
+
+    <img src="music_img/back_img.png" id="back_img" alt="">
+    <audio src="music/song.mp3" id="music"></audio>
+
+    <script src="java/javas9.js"></script>
+</body>
+</html>

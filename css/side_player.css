@@ -1,0 +1,66 @@
+.side_player{
+    position: absolute;
+    top: 8%;
+    /* left: 120%; */
+    /* right: -50vw; */
+    /* right: -200px; */
+    right: -700px;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    border-radius: 100px;
+    overflow: hidden;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.4s;
+    /* cursor: pointer; */
+    align-items: center;
+    z-index: 4;
+    background-color: rgba(255, 255, 255, 0.247);
+}
+.song_logo_s img{
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.title_s{
+    position: absolute;
+    margin: 5px 5px;
+    height: 50px;
+    overflow: hidden;
+    color: #fff;
+    top: -1%;
+    font-size: 14.7px;
+    font-family: 'Capriola', sans-serif;
+    left: 30%;
+}
+.progres_div_s{
+    position: absolute;
+    width: 250px;
+    top: 52%;
+    transition: 0.2s;
+    left: 29%;
+    border-radius: 4px;
+    height: 4px;
+    background-color: rgb(226, 226, 226);
+}
+.progres_s{
+    position: absolute;
+    border-radius: 4px;
+    width: 0%;
+    transition: 0.2s;
+    height: 100%;
+    background-color: tomato;
+}
+.cantrol_s{
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    font-size: 25px;
+}
+.cantrol_s i{
+    margin:  0 10px;
+    cursor: pointer;
+    color: rgb(226, 226, 226);
+}

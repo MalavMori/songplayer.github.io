@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Kaisei+HarunoUmi:wght@500&family=Lobster&display=swap');
+.player{
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%,-44%);
+    width: 420px;
+    height: 550px;
+    transition: 0.4s;
+    align-items: center;
+    border-radius: 15px;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.247);
+}
+.titlep{
+    font-family: 'Capriola', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+.song_logop img{
+    margin: 10px 30px;
+    width: 360px;
+    height: 360px;
+}
+.progres_div{
+    position: relative;
+    width: 400px;
+    height: 5px;
+    border-radius: 5px;
+    transition: 0.2s;
+    margin: 15px 10px;
+    cursor: pointer;
+    background-color: rgb(226, 226, 226);
+}
+.progres{
+    position: absolute;
+    width: 0%;
+    /* border-radius: 5px; */
+    height: 5px;
+    transition: 0.2s;
+    background-color: tomato;
+    z-index: 1;
+}
+.time{
+    position: relative;
+    display: flex;
+    margin: 0px 10px;
+    top: -40px;
+    font-family: sans-serif;
+    color: #fff;
+    justify-content: space-between;
+}
+.cantrol{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.cantrol i {
+    margin: 5px 15px;
+    cursor: pointer;
+    color: rgb(226, 226, 226);
+}
